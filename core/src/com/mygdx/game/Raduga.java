@@ -2,7 +2,7 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.math.Vector2;
 
-public class Bullet {
+public class Raduga {
     private Vector2 position;
     private float speed;
     private boolean active;
@@ -15,7 +15,7 @@ public class Bullet {
         return active;
     }
 
-    public Bullet() {
+    public Raduga() {
         speed = 10.0f;
         position = new Vector2(0.0f, 0.0f);
         active = false;

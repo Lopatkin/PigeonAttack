@@ -16,7 +16,7 @@ public class MyFX {
 
     public MyFX() {
         if (texture == null)
-            texture = new Texture("BOOM.png");
+            texture = new Texture("death.png");
         active = false;
         position = new Vector2(0.0f, 0.0f);
     }
@@ -24,7 +24,7 @@ public class MyFX {
     public void setup(float x, float y) {
         active = true;
         position.x = x;
-        position.y = y;
+        position.y = y-50;
         time = 0.0f;
     }
 
@@ -38,6 +38,6 @@ public class MyFX {
 
     public void render(SpriteBatch batch) {
         if (isActive())
-            batch.draw(texture, position.x, position.y, (int) (time) * 40, 0, 40, 40);
+            batch.draw(texture, position.x, position.y, (int) (time) * 129, 0, 129, 129);
     }
 }
